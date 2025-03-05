@@ -32,9 +32,16 @@ body{
     
 }
 
+h2{
+    font-family: var(--font-special);
+    font-size: 2rem;
+    font-weight: var(--font-regular);
+}
+
 .container{
     max-width: 1352px;
     margin-inline: auto;
+    
 }
 
 .container-narrow{
@@ -94,6 +101,8 @@ body{
 }
 
 /*----- section1 -----*/
+
+
 .section1__content{
     display: flex;
     flex-direction: column;
@@ -129,15 +138,99 @@ p{
 
 .section1__title{
      margin-bottom: 20px;
- }
+}
 
- .button__main{
+.button__main{
     margin-top: 38px;
- }
+}
 
- .section1{
+.section1{
     margin-top: 130px;
-    height: 712px;
-      
- }
- 
+    height: auto;
+}
+
+.section1__background{
+    width: 100%;
+    /* height: auto; */
+}
+
+ /* ---- section2 ---- */
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 531px;
+}
+
+.section2__boxes{
+    display: flex;
+    justify-content: center;
+   
+}
+
+ .dot__form{
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+}
+.statistic__text{
+    font-family: var(--font-special);
+    font-size: 17px;
+    color: var(--color-grey);
+    font-weight: var(--font-regular);
+    text-align: center;
+    line-height: 20px;
+}
+
+.statistic__title{
+    padding-top: 20px;
+    padding-bottom: 101px;
+    text-align: center;
+}
+.statistic__numbers{
+    padding: 14px 0 19px;
+    font-family: var(--font-special);
+    font-size: 1.5rem;
+    color: var(--color-black);
+    font-weight: 800;
+}
+.box__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.dot__blue{
+    background: var(--color-primary);
+    margin: 0 260px 0 244px;
+}
+.dot__red{
+    background: var(--color-redish);
+    /* position: relative; */
+    
+}
+.dot__green{
+    background: var(--color-green);
+    }
+
+.icon{
+    position: absolute;
+}
+
+.icon__person{
+    left: 50%;
+    bottom: 5px;
+}
+
+.icon__eye{
+    left: calc(50% - 11px);
+    bottom: 13px;
+    }
+
+.icon__catalog{
+    bottom: 7px;
+    left: 50%;
+}
