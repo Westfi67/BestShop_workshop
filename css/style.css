@@ -12,7 +12,7 @@ body{
 
 :root{
     --color-primary: #08a6e4;
-    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-primary-shadow: rgba(7, 172, 230, 0.16);
     --color-redish: #FB3B64;
     --color-green: #55dfb4;
     --color-black: #000000;
@@ -542,4 +542,89 @@ p{
 
 .button--basic{
     background: var(--color-redish);
+}
+
+/* ----- section5 ------*/
+.section5__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5__boxes{
+    display: flex;
+    width: 896px;
+    height: 376px;
+    margin-top: 155px;
+    position: relative;
+    
+}
+.section5__box--question,
+.contact-form{
+    flex: 1 1 50%;
+
+}
+
+.box-question__text{
+    font-family: var(--font-basic);
+    font-weight: var(--font-regular);
+    font-size: 1rem;
+    color: var(--color-black);
+    margin-top: 22px;
+}
+.box-question__contacts{
+    display: flex;
+    margin-top: 3rem;
+    
+}
+
+.box-question--mail,
+.box-questions--phone{
+    font-family: var(--font-basic);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-grey);
+    margin: 0 20px 0 10px;
+}
+
+.contact-form__field{
+    display: flex;
+    flex-direction: column;
+}
+.form-label{
+    font-family: var(--font-basic);
+    font-weight: var(--font-bold);
+    font-size: 11px;
+    color: var(--color-primary);
+}
+.contact-form__field{
+    height: 157px;
+    
+}
+.form-input{
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+}
+.form-label--email{
+    margin-top: 42px;
+}
+.form-consent{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+.form-label__consent{
+    font-family: var(--font-basic);
+    font-weight: var(--font-regular);
+    font-size: 12px;
+    color: #707070;
+}
+.button--bottom{
+    position: absolute;
+    right: 0;
+    bottom: 59px;
+    font-size: 13px;
+    padding: 20px 97px;
+
 }
