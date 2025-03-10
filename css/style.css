@@ -31,6 +31,10 @@ body{
 
     
 }
+html{
+    scroll-behavior: smooth;
+}
+
 
 h2{
     font-family: var(--font-special);
