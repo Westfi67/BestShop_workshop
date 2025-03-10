@@ -554,7 +554,7 @@ p{
 .section5__boxes{
     display: flex;
     width: 896px;
-    height: 376px;
+    min-height: 396px;
     margin-top: 155px;
     position: relative;
     
@@ -610,17 +610,39 @@ p{
     margin-top: 42px;
 }
 .form-consent{
-    display: flex;
+    /* display: flex; */
     gap: 10px;
     align-items: start;
+    /* margin-block: 30px; */
 }
 .form-label__consent{
+    display: flex;
     font-family: var(--font-basic);
     font-weight: var(--font-regular);
     font-size: 12px;
     color: #707070;
 }
+.form-label__consent::before{
+    flex-shrink: 0;
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #95989a;
+    margin-right: 10px;
+}
+
+.form-checkbox{
+    appearance: none;
+}
+
+.form-checkbox:checked + .form-label__consent::before{
+    background: url(../assets/Checkmark.svg) no-repeat center;
+}
+
 .button--bottom{
+    margin-top: 20px;
     position: absolute;
     right: 0;
     bottom: 59px;
