@@ -650,3 +650,34 @@ p{
     padding: 20px 97px;
 
 }
+
+/* ---- footer ---- */
+.footer{
+    background: var(--color-light-grey);
+    box-shadow: 0px -5px 40px #00000029;
+}
+
+
+.footer__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-left__logo{
+    color: var(--color-primary);
+    font-family: var(--font-special);
+    font-size: 26px;
+    font-weight: 300;
+    padding: 21px 0 6px 0;
+}
+.copyright{
+    font-family: var(--font-basic);
+    font-size: 11px;
+    font-weight: var(--font-regular);
+    color: var(--color-grey);
+    margin-bottom: 17px;
+}
+.footer-right{
+    display: flex;
+    gap: 20px;
+}
